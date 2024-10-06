@@ -83,7 +83,7 @@ async def respond(
 demo = gr.ChatInterface(
     respond,
     chatbot=gr.Chatbot(value=[[None, greeting_message]], height=300),
-    textbox=gr.Textbox(placeholder="Type your query here..", container=False, scale=7),
+    textbox=gr.Textbox(placeholder="Type your query here again..", container=False, scale=7),
     title="Staking Solana",
     theme="soft",
     retry_btn=None,
