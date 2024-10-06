@@ -18,7 +18,7 @@ selected_model = config.SELECTED_MODEL
 chat_history = []
 
 greeting_message = """
-Hey! I'm here to assist you with any programming or software development questions related to the code repository at https://github.com/JYOTSNACHOUDHARY/TaskManagerApp. How can I help you today?
+Hey! I'm here to assist you with any programming or software development questions related to the code repository at https://github.com/vitynadovity88/staking. How can I help you today?
 """
 
 
@@ -84,17 +84,16 @@ demo = gr.ChatInterface(
     respond,
     chatbot=gr.Chatbot(value=[[None, greeting_message]], height=300),
     textbox=gr.Textbox(placeholder="Type your query here..", container=False, scale=7),
-    title="CodeWise",
+    title="Staking Solana",
     theme="soft",
     retry_btn=None,
     undo_btn="Delete Previous",
     clear_btn="Clear",
     examples=[
-        ["Explain the main functionality of my TaskManager app"],
+        ["Explain the main functionality of my Staking Solana program"],
         [
-            "How can I include a functionality to sort the tasks by due date in my application?"
+            "Help writting integration tests using anchor and examples provided in the repository?"
         ],
-        ["How can I improve the UI design of my application?"],
     ],
     cache_examples=True,
     additional_inputs=[
